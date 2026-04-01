@@ -1,5 +1,4 @@
 name: Auto Post Articles
-
 on:
   schedule:
     - cron: '0 22 * * *'
@@ -8,7 +7,6 @@ on:
     - cron: '0 8 * * *'
     - cron: '0 12 * * *'
   workflow_dispatch:
-
 jobs:
   generate:
     runs-on: ubuntu-latest
