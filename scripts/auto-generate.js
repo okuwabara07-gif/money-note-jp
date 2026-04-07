@@ -67,7 +67,11 @@ const KEYWORD_PATTERNS = {
 };
 
 function getKeywords() {
-  const topicBase = TOPIC.split('・')[0];
+  const topicBase = TOPIC.split('・')[0  // manga keywords
+  '投資 漫画 おすすめ',
+  'お金持ち 漫画',
+  '節約 漫画 ランキング',
+];
   const all = [];
   Object.values(KEYWORD_PATTERNS).forEach(fn => all.push(...fn(topicBase)));
   return all;
